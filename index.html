@@ -1,0 +1,54 @@
+<!-- Sitio 1: Con mucho contenido, desorganizado y errores visuales evidentes -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sitio de Prueba - Exceso de Contenido</title>
+  <style>
+    body {
+      background-color: #f8f8ff;
+      font-family: 'Comic Sans MS', cursive;
+      color: #222;
+    }
+    h1 {
+      font-size: 50px;
+      text-transform: uppercase;
+      color: red;
+    }
+    .bloque {
+      margin: 20px;
+      padding: 20px;
+      border: 2px dashed purple;
+      background: #ffffe0;
+      transform: rotate(1deg);
+    }
+    .contenido {
+      font-size: 18px;
+      line-height: 1.2;
+      text-align: justify;
+    }
+    .warning {
+      color: orange;
+      font-weight: bold;
+      background-color: black;
+      padding: 10px;
+    }
+    .invertido {
+      transform: scaleX(-1);
+      display: inline-block;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="invertido">Bienvenido al sitio de prueba</h1>
+  <div class="bloque">
+    <p class="contenido">Este sitio contiene <span style="color:green">demasiada</span> información mal distribuida, sin jerarquía visual ni organización clara. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo nec elit blandit tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur at varius nulla, nec facilisis magna. Nullam hendrerit lacus vel vehicula iaculis.</p>
+    <p class="warning">¡Atención! Este botón no funciona. 🔴</p>
+    <button onclick="alert('Oops! Esto no debería hacer nada útil.')">Haz clic aquí</button>
+  </div>
+  <div class="bloque">
+    <p class="contenido">Más contenido innecesario... Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ullamcorper, sem non consectetur pharetra, neque nisl dapibus leo, at blandit nulla turpis at magna.</p>
+  </div>
+</body>
+</html>
